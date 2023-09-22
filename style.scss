@@ -1,0 +1,84 @@
+
+.about-container {
+    width: 100%;
+    display: flex;
+
+    flex-direction: column;
+
+    .about-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .about-right {
+        margin: 40px;
+        position: relative;
+
+        .avatar-card {
+            img {
+                aspect-ratio: attr(width) / attr(height);
+                border-bottom-right-radius: 40px;
+                border-top-right-radius: 40px;
+                border-top-left-radius: 40px;
+            }
+        }
+    }
+
+    .about-right::before {
+        content: 'yes, its me';
+        text-transform: capitalize;
+        position: absolute;
+        left: -60px;
+        top: -30px;
+    }
+
+    .about-right::after {
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: -10px;
+        width: 70px;
+        height: 2px;
+        background: #fff;
+        transform-origin: right;
+        transform: rotate(30deg);
+    }
+
+    .about-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        width: 50%;
+        margin: 50px;
+
+        h3 {
+            font-size: 1.6rem;
+            color: var(--primaryColor);
+            margin-block: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: var(--secondaryColor);
+            margin-block: 10px;
+        }
+
+        .about-btns {
+            display: flex;
+            flex-wrap: wrap;
+
+            .btn {
+                margin-block: 10px;
+            }
+
+            .btn:nth-child(1) i {
+                color: rgb(255, 51, 15);
+            }
+
+            .btn:nth-child(2) i {
+                color: rgb(15, 226, 156);
+            }
+        }
+    }
+}

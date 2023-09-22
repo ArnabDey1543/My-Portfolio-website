@@ -17,7 +17,7 @@ const section_1 = document.getElementById("vertical");
 const col_left = document.querySelector(".col_left");
 const timeln = gsap.timeline({ paused: true });
 
-timeln.fromTo(col_left, {y: 0}, {y: '100vh', duration: 1, ease: 'none'}, 0);
+timeln.fromTo(col_left, {y: 0}, {y: '150vh', duration: 1, ease: 'none'}, 0);
 
 const scroll_1 = ScrollTrigger.create({
     animation: timeln,
