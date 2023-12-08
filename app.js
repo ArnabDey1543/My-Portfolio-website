@@ -8,9 +8,6 @@ const projectsTitle = document.querySelector(".projectsTitle")
 const phones = document.querySelectorAll(".phone")
 const laptop = document.querySelector(".laptop")
 
-
-
-
 for(let i = 0; i<365; i++){
 
   const list = [
@@ -37,22 +34,6 @@ for(let i = 0; i<365; i++){
 
 window.addEventListener("scroll", ()=>{
   let offsetY = window.scrollY
-  // saluteTextContainer.style.transform= `translateY(${offsetY * 0.1}px)`
-  // saluteImgContainer.style.transform= `translate(${offsetY * 0.4}px, ${offsetY * 0.7}px)`
-  // authorName.style.transform= `translateX(${offsetY * 0.1}px)`
-  // jobTitleContainers[0].style.backgroundPositionY = `${offsetY * 0.5}px`
-  // jobTitleContainers[1].style.backgroundPositionY = `${-offsetY * 0.5}px`
-  // jobTitles[0].style.transform = `translateX(calc(400vh - ${offsetY}px))`
-  // jobTitles[1].style.transform = `translateX(calc(-500vh + ${offsetY}px))`
-  // projectsTitle.style.transform = `translateY(calc(700vh - ${offsetY}px))`
-  // laptop.style.transform = `translateX(calc(800vh - ${offsetY}px))`
-  // phones[0].style.transform = `translateX(calc(920vh - ${offsetY}px))`
-  // phones[1].style.transform = `translateX(calc(1050vh - ${offsetY}px))`
-
-
-
-
-
   saluteTextContainer.style.transform= `translateY(${offsetY * 0.1}px)`
   saluteImgContainer.style.transform= `translate(${offsetY * 0.4}px, ${offsetY * 0.7}px)`
   authorName.style.transform= `translateX(${offsetY * 0.1}px)`
@@ -61,22 +42,7 @@ window.addEventListener("scroll", ()=>{
   jobTitles[0].style.transform = `translateX(calc(200vh - ${offsetY}px))`
   jobTitles[1].style.transform = `translateX(calc(-300vh + ${offsetY}px))`
   projectsTitle.style.transform = `translateY(calc(400vh - ${offsetY}px))`
-  // projectsTitle.style.transform = `translateY(calc(800vh - ${offsetY}px))`
-
-  // laptop.style.transform = `translateX(calc(900vh - ${offsetY}px))`
-  // phones[0].style.transform = `translateX(calc(1020vh - ${offsetY}px))`
-  // phones[1].style.transform = `translateX(calc(1150vh - ${offsetY}px))`
-  laptop.style.transform = `translateX(calc(500vh - ${offsetY}px))`
-  phones[0].style.transform = `translateX(calc(600vh - ${offsetY}px))`
+  phones[0].style.transform = `translateX(calc(500vh - ${offsetY}px))`
+  laptop.style.transform = `translateX(calc(600vh - ${offsetY}px))`
   phones[1].style.transform = `translateX(calc(750vh - ${offsetY}px))`
-  // projectsTitle.style.transform = `translateY(calc(500vh - ${offsetY}px))`
-  // // projectsTitle.style.transform = `translateY(calc(800vh - ${offsetY}px))`
-
-  // // laptop.style.transform = `translateX(calc(900vh - ${offsetY}px))`
-  // // phones[0].style.transform = `translateX(calc(1020vh - ${offsetY}px))`
-  // // phones[1].style.transform = `translateX(calc(1150vh - ${offsetY}px))`
-  // laptop.style.transform = `translateX(calc(600vh - ${offsetY}px))`
-  // phones[0].style.transform = `translateX(calc(720vh - ${offsetY}px))`
-  // phones[1].style.transform = `translateX(calc(850vh - ${offsetY}px))`
-
 })
